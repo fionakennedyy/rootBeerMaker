@@ -1,0 +1,101 @@
+<DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Fiona Kennedy">
+<title>Root Beer Float Maker</title>
+</head>
+
+<body>
+<h1>Root Beer Float Maker</h1>
+
+<div id="format">
+<div id="block1">
+<div id="forms">
+<form name="iceCreams" id="icecream">
+<fieldset>
+<legend>Ice Creams</legend>
+	<input type="checkbox" id="ic1" name="ic1" value="vanilla">
+	<label for="ic1">vanilla</label><br>
+	<input type="checkbox" id="ic2" name="ic2" value="chocolate">
+	<label for="ic1">chocolate</label><br>
+	<input type="checkbox" id="ic3" name="ic3" value="coffee">
+	<label for="ic1">coffee</label><br>
+</fieldset>
+</form>
+
+<form name="rootBeers" id="rootbeer">
+<fieldset>
+<legend>Root Beers</legend>
+	<input type="radio" id="rb1" name="rb1" value="Barq's">
+	<label for="ic1">Barq's</label><br>
+	<input type="radio" id="rb2" name="rb2" value="A&W">
+	<label for="ic1">A&amp;W</label><br>
+	<input type="radio" id="rb3" name="rb3" value="Dad's">
+	<label for="ic1">Dad's</label><br>
+	<input type="radio" id="rb4" name="rb4" value="IBC">
+	<label for="ic1">IBC</label><br>
+</fieldset>
+</form>
+</div>
+
+<input type="button"
+		value="I'm ready to make my float!"
+		onclick="rbfloat()">
+
+<dialog id="dialog"/>
+</div>
+		
+<div id="block2">
+<figure>
+	<img src="float.png"/>
+</figure>
+</div>
+</div>
+
+</body>
+
+<style>
+fieldset{
+	width: 70pt;
+}
+#rootbeer{
+	float: right;
+}
+#icecream{
+	float: left;
+}
+#block1 {
+	float: left;
+	width: 280px;
+}
+#block2 {
+	float: right;
+	width: 80%;
+}
+#format{
+	width: auto;
+}
+dialog{
+	background-color: #804634;
+	color: white;
+	position: fixed;
+	bottom: 350;
+	left: -1250;
+	border-style: double;
+	border-color: white;
+	border: double;
+	
+}
+#forms{
+	height: auto;
+}
+
+
+</style>
+
+<script src="rootbeer.js">
+</script>
+
+</html>
